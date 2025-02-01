@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    border: 3px solid black;
+    aspect-ratio: 1 / 1;
+    flex: 1;
+    max-width: 90vh;
+}
