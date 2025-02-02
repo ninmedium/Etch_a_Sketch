@@ -1,10 +1,15 @@
-//Early function model
-//add styles to div boxes
 let gridNum = 16;
 let gridHold;
 let container = document.querySelector("#container");
 
-for (let i=0; i < gridNum; i++) {
-    gridHold = document.createElement("div");
-    container.appendChild(gridHold);
+function createGrid(gridNum) {
+    for (let i=0; i < (gridNum * gridNum); i++) {
+        gridHold = document.createElement("div");
+        gridHold.style.aspectRatio = "1 / 1";
+        gridHold.style.width = `${660 / gridNum}px`;
+        gridHold.style.border = "1px solid black"
+        container.appendChild(gridHold);
+    }
 }
+
+createGrid(16);
