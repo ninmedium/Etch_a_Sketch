@@ -21,4 +21,4 @@ function createGrid(gridNum) {
 
 
 
-createGrid(50);
+createGrid(1);
