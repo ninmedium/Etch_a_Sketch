@@ -6,3 +6,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.gridbox {
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
