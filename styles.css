@@ -3,5 +3,6 @@
     border: 3px solid black;
     aspect-ratio: 1 / 1;
     width: 660px;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
