@@ -9,6 +9,16 @@ function createGrid(gridNum) {
         gridHold.style.width = `${660 / gridNum}px`;
         container.appendChild(gridHold);
     }
+    
+    let gridBoxes = document.querySelectorAll(".gridbox");
+    
+    gridBoxes.forEach(box => {
+    box.addEventListener("mouseenter", () => {
+        box.classList.add("active");
+    })
+})
 }
 
-createGrid(16);
+
+
+createGrid(50);
