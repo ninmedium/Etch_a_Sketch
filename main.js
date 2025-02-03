@@ -1,4 +1,3 @@
-let gridNum = 16;
 let gridHold;
 let container = document.querySelector("#container");
 
@@ -19,16 +18,16 @@ function createGrid(gridNum) {
 })
 }
 
-
-
-createGrid(20);
-
 const gridSizeInput = document.querySelector("#gridSizeInput");
 const startButton = document.querySelector("#start");
 
-console.log(gridSizeInput);
-
 startButton.addEventListener("click", () => {
-    const gridSize = gridSizeInput.value;
-    console.log(gridSize);
+    const gridSize = +gridSizeInput.value;
+    if (gridSize >= 1 && gridSize <= 100) {
+        createGrid(gridSize);
+    } else {
+        alert("Choose a number between 1 and 100");
+    }
 })
+
+createGrid(64);
