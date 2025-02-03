@@ -1,3 +1,4 @@
+let shadeMode = false;
 let gridHold;
 let container = document.querySelector("#container");
 
@@ -15,7 +16,13 @@ function createGrid(gridNum) {
     
     gridBoxes.forEach(box => {
     box.addEventListener("mouseenter", () => {
-        box.classList.add("active");
+        if(box.classList.contains("active") || box.classList.contains("shaded")) {
+            return;
+        } else if (shadeMode) {
+            box.classList.add("shaded");
+        } else {
+            box.classList.add("active");
+        }
     })
 })
 }
@@ -38,7 +45,7 @@ createGrid(30);
 const shadeButton = document.querySelector("#shade");
 
 shadeButton.addEventListener("click", () => {
-    console.log("hello");
+    shadeMode = true;
 })
 
 //add class as identifier. remove class normally when mouseenter. those untouched can be shaded.
