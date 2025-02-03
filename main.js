@@ -21,4 +21,14 @@ function createGrid(gridNum) {
 
 
 
-createGrid(1);
+createGrid(20);
+
+const gridSizeInput = document.querySelector("#gridSizeInput");
+const startButton = document.querySelector("#start");
+
+console.log(gridSizeInput);
+
+startButton.addEventListener("click", () => {
+    const gridSize = gridSizeInput.value;
+    console.log(gridSize);
+})
