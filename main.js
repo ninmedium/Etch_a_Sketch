@@ -9,7 +9,9 @@ function createGrid(gridNum) {
         container.appendChild(gridHold);
     }
     
-    let gridBoxes = document.querySelectorAll(".gridbox");
+    const gridBoxes = document.querySelectorAll(".gridbox");
+
+
     
     gridBoxes.forEach(box => {
     box.addEventListener("mouseenter", () => {
@@ -32,3 +34,11 @@ startButton.addEventListener("click", () => {
 })
 
 createGrid(30);
+
+const shadeButton = document.querySelector("#shade");
+
+shadeButton.addEventListener("click", () => {
+    console.log("hello");
+})
+
+//add class as identifier. remove class normally when mouseenter. those untouched can be shaded.
