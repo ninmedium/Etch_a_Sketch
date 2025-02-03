@@ -24,10 +24,11 @@ const startButton = document.querySelector("#start");
 startButton.addEventListener("click", () => {
     const gridSize = +gridSizeInput.value;
     if (gridSize >= 1 && gridSize <= 100) {
+        container.innerHTML = "";
         createGrid(gridSize);
     } else {
         alert("Choose a number between 1 and 100");
     }
 })
 
-createGrid(64);
+createGrid(30);
