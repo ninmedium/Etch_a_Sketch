@@ -57,5 +57,3 @@ const shadeButton = document.querySelector("#shade");
 shadeButton.addEventListener("click", () => {
     shadeMode = true;
 })
-
-//add if statement for shade mode. If has x class, remove it and make x+1 class active.
