@@ -19,7 +19,17 @@ function createGrid(gridNum) {
         if(box.classList.contains("active") || box.classList.contains("shaded")) {
             return;
         } else if (shadeMode) {
-            box.classList.add("shaded");
+            for (let i = 0; i < 9; i++) {
+                if (box.classList.contains(`shaded${i}`)) {
+                    box.classList.remove(`shaded${i}`);
+                    box.classList.add(`shaded${i + 1}`);
+                    return;
+                } else if (box.classList.contains("shaded9")) {
+                    return;
+                }
+            }
+            box.classList.add("shaded0");
+
         } else {
             box.classList.add("active");
         }
@@ -48,4 +58,4 @@ shadeButton.addEventListener("click", () => {
     shadeMode = true;
 })
 
-//add class as identifier. remove class normally when mouseenter. those untouched can be shaded.
+//add if statement for shade mode. If has x class, remove it and make x+1 class active.

@@ -17,6 +17,52 @@
     background-color: black;
 }
 
-.shaded {
-    background-color: aqua;
+.shaded0 {
+    background-color: black;
+    opacity: 0.1;
+}
+
+.shaded1 {
+    background-color: black;
+    opacity: 0.2;
+}
+
+.shaded2 {
+    background-color: black;
+    opacity: 0.3;
+}
+
+.shaded3 {
+    background-color: black;
+    opacity: 0.4;
+}
+
+.shaded4 {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.shaded5 {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.shaded6 {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.shaded7 {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.shaded8 {
+    background-color: black;
+    opacity: 0.9;
+}
+
+.shaded9 {
+    background-color: black;
+    opacity: 1;
 }
