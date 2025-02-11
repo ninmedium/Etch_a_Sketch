@@ -45,6 +45,7 @@ startButton.addEventListener("click", () => {
     if (gridSize >= 1 && gridSize <= 100) {
         container.innerHTML = "";
         createGrid(gridSize);
+        shadeMode = false;
     } else {
         alert("Choose a number between 1 and 100");
     }
